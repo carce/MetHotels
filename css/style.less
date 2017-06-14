@@ -11,21 +11,28 @@ body {
 
 h1 {
 	font-family: @font_family_1;
-    font-size: 3rem;
+    font-size: 4rem;
+	text-align: center;
 }
 
 header {
 	box-sizing: border-box;
 	padding: 1rem 0;
-	height: 500px;
+	height: 320px;
 	width: 100%;
 	background: url('/img/hotel-hero.jpg') no-repeat;
 	background-attachment: fixed;
-	background-position: center -150px;
+	background-size: auto 320px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+
+	@media (min-width: 768px) {
+		height: 500px;
+		background-position: center -150px;
+		background-size: auto;		
+	}
 	
     div {
 		display: inline-block;
@@ -35,8 +42,12 @@ header {
     h1 {
 		margin: 1rem 0;
 		color: @color_text;
-		font-size: 8rem;
 		font-weight: 400;
+		font-size: 6rem;
+
+		@media (min-width: 768px) {
+			font-size: 8rem;
+		}
 	}
 }
 
@@ -44,22 +55,41 @@ header {
     height: 73px;
 }
 
-nav {
+.navbar.navbar-met {
+	z-index: 10;
 	background-color: @background_primary;
+	border-radius: 0;
+	border: none;
 
     &.fixed {
         position: fixed;
         top: 0;
         width: 100%;
     }
+
+	.navbar-toggle {
+		// border-color: #ffffff;
+
+		.icon-bar {
+			background-color: #ffffff;
+		}
+	}
+
+	.navbar-collapse {
+		border: none;
+		box-shadow: none;
+	}
 	
-    >ul {
-		display: flex;
-		justify-content: center;
-		margin: 0 auto;
-		padding: 0;
-		list-style: none;
-		
+    ul.navbar-nav {
+		@media (min-width: 768px) {
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+			padding: 0;
+			list-style: none;
+			float: none;
+		}
+
         >li {
 			>a {
 				display: block;
@@ -70,7 +100,7 @@ nav {
 				font-weight: 700;
 				transition: background-color .2s;
 				
-                &:hover {
+                &:hover, &:focus {
 					background-color: @background_darker;
 				}
 			}
@@ -84,12 +114,17 @@ nav {
 	}
 }
 
-section.w960 {
-	width: 960px;
-}
+.hero-item {
+	margin: 5rem 0;
+	text-align: center;
 
-section#main {
-	margin: 5rem auto;
+	img {
+		width: 128px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
 }
 
 article {
@@ -100,39 +135,35 @@ article {
 
 footer {
 	background-color: @background_primary;
-	display: flex;
-	justify-content: center;
-	padding: 2rem 0;
+	padding: 1rem 0;
+	margin-top: 2rem;
 	
-    >section {
-		display: flex;
-		justify-content: space-around;
+    .footer-list {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		text-align: center;
+
+		>p {
+			font-family: @font_family_1;
+			font-size: 18px;
+			// font-weight: 700;
+			color: @color_text;
+			margin: 0 0 1rem 0;
+		}
 		
-        >section {
-			>p {
-				font-family: @font_family_1;
-				color: @color_text;
-				margin: 0 0 1rem 0;
-			}
+		>ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
 			
-            >ul {
-				list-style: none;
-				margin: 0;
-				padding: 0;
-				
-                >li {
-					>a {
-						display: block;
-						text-decoration: none;
-						color: @color_darker;
-						margin: 0 0 .5rem;
-					}
-					
-                    &:last-child {
-						>a {
-							margin: 0;
-						}
-					}
+			>li>a {
+				display: block;
+				text-decoration: none;
+				color: @color_darker;
+				margin: 0 0 .5rem;
+
+				&:hover {
+					text-decoration: underline;
 				}
 			}
 		}

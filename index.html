@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>MetHotels</title>
+        <title>MetHotels Bootstrap</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
         <link rel="stylesheet/less" type="text/css" href="css/style.less" />
         <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
-    </head>
+        </head>
     <body>
         <header>
             <div>
@@ -15,73 +23,121 @@
             </div>
         </header>
         <div id="nav-wrapper">
-            <nav>
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <nav class="navbar navbar-met">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
             </nav>
         </div>
-        <section class="w960" id="main">
-            <article>
-                <h1>Worlds Leading Hotel Suits</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem, placeat rem magnam. Sunt, dolorum. Amet veniam corrupti neque, repellat voluptates vel, necessitatibus quisquam cum laborum. Porro architecto eum necessitatibus corporis recusandae ut, et ex nulla dolores sapiente, non, in.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eos pariatur fugit, consequatur vero minima et veniam accusamus ex delectus aliquam, distinctio blanditiis minus molestiae tempora ipsa consectetur aspernatur odio fuga quam, ducimus. Eum molestias repellat, vero hic explicabo nulla. Exercitationem ratione aperiam, cum ut earum rerum distinctio fuga adipisci beatae ex, nulla repudiandae quasi molestiae quo itaque perferendis, qui repellat consectetur nostrum dolores dolor. Aliquid, harum voluptates placeat rerum, esse a qui dolorem enim praesentium ducimus eius asperiores accusantium assumenda possimus laboriosam architecto nostrum beatae voluptatibus reiciendis saepe, quos nesciunt veritatis. Sequi iste neque nisi officiis expedita, cupiditate, cum sapiente dicta, dolores nobis, placeat deleniti consequatur illo tempora doloremque.</p>
-                <p>In veniam ad modi animi omnis accusantium. Iure vitae, sapiente cupiditate voluptatem debitis, blanditiis deleniti aperiam porro totam odio nihil quisquam id ea provident nostrum. Consequatur quisquam praesentium et aspernatur provident dignissimos ea aperiam animi, vero reiciendis molestiae veniam, doloribus libero quia neque dicta laboriosam, repellat at incidunt corrupti eum possimus quae! Ad officiis amet odit, necessitatibus magnam, exercitationem quibusdam maxime quas. Necessitatibus natus repellat possimus libero eius consectetur. Magni neque iure dolores quibusdam sint. Quo ipsam, exercitationem a nulla eligendi, consequuntur, modi nostrum molestias debitis facere rerum voluptas, sunt suscipit quasi totam numquam. Harum assumenda obcaecati dicta necessitatibus, sunt ipsa dignissimos molestiae ducimus. Vel suscipit cupiditate ex hic non maxime a voluptates dolore amet quae laborum, fuga libero eos. Aperiam id necessitatibus eius ullam rem, vitae magni dolorem animi architecto eaque tempora ab magnam dicta repellat pariatur iure alias expedita esse a, delectus rerum perspiciatis! Vero nobis hic, culpa eaque eum, neque ipsum cum officiis cumque cupiditate facere esse quisquam, dolore aliquam porro at, recusandae commodi autem. Illo aut, delectus in accusantium quasi? Veritatis mollitia, perspiciatis illo tempore aspernatur ullam, similique. Rerum, quibusdam totam. Quod natus, commodi itaque sed!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur nobis quaerat aperiam dolore nostrum. Itaque expedita repellat hic alias facere temporibus voluptates, odit consequuntur illo quaerat soluta sunt perferendis doloribus beatae vero maxime natus officia, eos, autem suscipit atque id minima ea incidunt! Earum reprehenderit, error perferendis nam nulla placeat. Enim, beatae. Officia repellendus deleniti placeat consequuntur vel aut impedit provident fuga, laboriosam fugit, sint facilis, doloremque. Nisi, mollitia.</p>
-            </article>
-        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>World's Leading Hotel Suits</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="hero-item">
+                        <img src="img/maps-and-flags-1.svg" alt="">
+                        <h2>All Over the World</h2>
+                        <p>Our hotel chain is international. Enjoy our top suits wherever you go.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="hero-item">
+                        <img src="img/customer-service.svg" alt="">
+                        <h2>Best Customer Support</h2>
+                        <p>Our support staff consists of top notch professionals ready to answer any question you might have.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="hero-item">
+                        <img src="img/wall-calendar.svg" alt="">
+                        <h2>Smae Day Booking</h2>
+                        <p>With our superior booking platform you are able to book a room hours before you check in.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <article>
+                        <h2>Enjoy Highest Qulity Service in the World</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem, placeat rem magnam. Sunt, dolorum. Amet veniam corrupti neque, repellat voluptates vel, necessitatibus quisquam cum laborum. Porro architecto eum necessitatibus corporis recusandae ut, et ex nulla dolores sapiente, non, in.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eos pariatur fugit, consequatur vero minima et veniam accusamus ex delectus aliquam, distinctio blanditiis minus molestiae tempora ipsa consectetur aspernatur odio fuga quam, ducimus. Eum molestias repellat, vero hic explicabo nulla. Exercitationem ratione aperiam, cum ut earum rerum distinctio fuga adipisci beatae ex, nulla repudiandae quasi molestiae quo itaque perferendis, qui repellat consectetur nostrum dolores dolor. Aliquid, harum voluptates placeat rerum, esse a qui dolorem enim praesentium ducimus eius asperiores accusantium assumenda possimus laboriosam architecto nostrum beatae voluptatibus reiciendis saepe, quos nesciunt veritatis. Sequi iste neque nisi officiis expedita, cupiditate, cum sapiente dicta, dolores nobis, placeat deleniti consequatur illo tempora doloremque.</p>
+                        <p>In veniam ad modi animi omnis accusantium. Iure vitae, sapiente cupiditate voluptatem debitis, blanditiis deleniti aperiam porro totam odio nihil quisquam id ea provident nostrum. Consequatur quisquam praesentium et aspernatur provident dignissimos ea aperiam animi, vero reiciendis molestiae veniam, doloribus libero quia neque dicta laboriosam, repellat at incidunt corrupti eum possimus quae! Ad officiis amet odit, necessitatibus magnam, exercitationem quibusdam maxime quas. Necessitatibus natus repellat possimus libero eius consectetur. Magni neque iure dolores quibusdam sint. Quo ipsam, exercitationem a nulla eligendi, consequuntur, modi nostrum molestias debitis facere rerum voluptas, sunt suscipit quasi totam numquam. Harum assumenda obcaecati dicta necessitatibus, sunt ipsa dignissimos molestiae ducimus. Vel suscipit cupiditate ex hic non maxime a voluptates dolore amet quae laborum, fuga libero eos. Aperiam id necessitatibus eius ullam rem, vitae magni dolorem animi architecto eaque tempora ab magnam dicta repellat pariatur iure alias expedita esse a, delectus rerum perspiciatis! Vero nobis hic, culpa eaque eum, neque ipsum cum officiis cumque cupiditate facere esse quisquam, dolore aliquam porro at, recusandae commodi autem. Illo aut, delectus in accusantium quasi? Veritatis mollitia, perspiciatis illo tempore aspernatur ullam, similique. Rerum, quibusdam totam. Quod natus, commodi itaque sed!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur nobis quaerat aperiam dolore nostrum. Itaque expedita repellat hic alias facere temporibus voluptates, odit consequuntur illo quaerat soluta sunt perferendis doloribus beatae vero maxime natus officia, eos, autem suscipit atque id minima ea incidunt! Earum reprehenderit, error perferendis nam nulla placeat. Enim, beatae. Officia repellendus deleniti placeat consequuntur vel aut impedit provident fuga, laboriosam fugit, sint facilis, doloremque. Nisi, mollitia.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
         <footer>
-            <section class="w960">
-                <section>
-                    <p>Main Navigation</p>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>   
-                </section>
-                <section>
-                    <p>Boring Stuff</p>
-                    <ul>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Site Map</a></li>
-                    </ul>
-                </section>
-                <section>
-                    <p>Social Links</p>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Youtube</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                </section>
-                <section>
-                    <p>Contact Us</p>
-                    <ul>
-                        <li><a href="#">+381 123 67 89</a></li>
-                        <li><a href="#">+381 623 55 23</a></li>
-                        <li><a href="#">info@methotels.com</a></li>
-                    </ul>                                   
-                </section>
-                <section>
-                    <p>Find Us</p>
-                    <ul>
-                        <li><a href="#">
-                            Milentija Popovica 34<br>
-                            1100 Belgrade, Serbia
-                        </a></li>
-                    </ul>                                   
-                </section>
-            </section>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-list col-xs-6 col-sm-3">
+                        <p>Main Navigation</p>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>   
+                    </div>
+                    <div class="footer-list col-xs-6 col-sm-3">
+                        <p>Boring Stuff</p>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="footer-list col-xs-6 col-sm-3">
+                        <p>Social Links</p>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Youtube</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list col-xs-6 col-sm-3">
+                        <p>Contact Us</p>
+                        <ul>
+                            <li><a href="#">+381 123 67 89</a></li>
+                            <li><a href="#">+381 623 55 23</a></li>
+                            <li><a href="#">info@methotels.com</a></li>
+                            <li><a href="#">
+                                Milentija Popovica 34<br>
+                                1100 Belgrade, Serbia
+                            </a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
         </footer>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="/js/logic.js"></script>
     </body>
 </html>
