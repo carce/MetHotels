@@ -1,0 +1,140 @@
+@color_text: #ffffff;
+@color_darker: #dddddd;
+@font_family_1: 'Raleway', sans-serif;
+@background_primary: #a70632;
+@background_darker: #7b0224;
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-family: @font_family_1;
+    font-size: 3rem;
+}
+
+header {
+	box-sizing: border-box;
+	padding: 1rem 0;
+	height: 500px;
+	width: 100%;
+	background: url('/img/hotel-hero.jpg') no-repeat;
+	background-attachment: fixed;
+	background-position: center -150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	
+    div {
+		display: inline-block;
+		text-align: center;
+	}
+	
+    h1 {
+		margin: 1rem 0;
+		color: @color_text;
+		font-size: 8rem;
+		font-weight: 400;
+	}
+}
+
+#nav-wrapper {
+    height: 73px;
+}
+
+nav {
+	background-color: @background_primary;
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+	
+    >ul {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 0;
+		list-style: none;
+		
+        >li {
+			>a {
+				display: block;
+				text-decoration: none;
+				color: @color_text;
+				padding: 1.5rem;
+				font-family: @font_family_1;
+				font-weight: 700;
+				transition: background-color .2s;
+				
+                &:hover {
+					background-color: @background_darker;
+				}
+			}
+			
+            >a.active {
+                padding-bottom: 1.2rem;
+				border-bottom: .3rem solid #ffffff;
+				background-color: @background_darker;
+			}
+		}
+	}
+}
+
+section.w960 {
+	width: 960px;
+}
+
+section#main {
+	margin: 5rem auto;
+}
+
+article {
+	>p {
+		text-align: justify;
+	}
+}
+
+footer {
+	background-color: @background_primary;
+	display: flex;
+	justify-content: center;
+	padding: 2rem 0;
+	
+    >section {
+		display: flex;
+		justify-content: space-around;
+		
+        >section {
+			>p {
+				font-family: @font_family_1;
+				color: @color_text;
+				margin: 0 0 1rem 0;
+			}
+			
+            >ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				
+                >li {
+					>a {
+						display: block;
+						text-decoration: none;
+						color: @color_darker;
+						margin: 0 0 .5rem;
+					}
+					
+                    &:last-child {
+						>a {
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
