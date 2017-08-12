@@ -1,0 +1,36 @@
+nav {
+    background-color: #a70632;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+nav>ul>li>a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    transition: background-color .2s;
+}
+
+nav>ul>li>a.active {
+    border-bottom: .3rem solid #ffffff;
+    background-color: #7b0224;
+}
+
+nav>ul>li>a:hover {
+    background-color: #7b0224;
+}

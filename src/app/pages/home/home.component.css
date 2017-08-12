@@ -1,0 +1,7 @@
+section#main {
+    margin: 5rem auto;
+}
+
+article>p {
+    text-align: justify;
+}
