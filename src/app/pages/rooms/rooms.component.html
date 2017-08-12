@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="search">
+        <label for="room">Filter rooms:</label>
+        <input type="text" #input (keyup)="0">
+    </div>
+    <h1>Rooms</h1>
+    <div *ngFor="let room of rooms | roomFilter:input.value">
+        <h4>{{room.id}}. {{room.name}}</h4>
+        <p>Fits: {{room.fits}}</p>
+    </div>
+</div>
