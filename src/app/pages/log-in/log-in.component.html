@@ -1,0 +1,13 @@
+<section class="w960 main">
+    <h1>Log in</h1>
+    <div class="form" [formGroup]="login">
+        <label for="username">Username:</label>
+        <input type="text" formControlName="username">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" formControlName="password">
+        <br>
+        <button (click)="onSubmit()">Log in</button>
+    </div>
+    <a routerLink='/register'>Click here to register</a>
+</section>

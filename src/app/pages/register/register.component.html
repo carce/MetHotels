@@ -1,0 +1,18 @@
+<section class="w960 main">
+    <h1>Register</h1>
+    <div class="form" [formGroup]="register">
+        <label for="fistName">First name:</label>
+        <input type="text" formControlName="firstName">
+        <br>
+        <label for="lastName">Last name:</label>
+        <input type="text" formControlName="lastName">
+        <br>
+        <label for="username">Username:</label>
+        <input type="text" formControlName="username">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" formControlName="password">
+        <br>
+        <button (click)="onSubmit()">Register</button>
+    </div>
+</section>
