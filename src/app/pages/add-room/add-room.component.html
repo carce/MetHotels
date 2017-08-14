@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Add Room</h1>
+    <div class="form" [formGroup]="room">
+        <label for="name">Name: </label>
+        <input type="text" formControlName="name">
+        <br>
+        <label for="fits">Fits: </label>
+        <input type="text" formControlName="fits">
+        <br>
+        <button (click)="addRoom()">Submit</button>
+    </div>
+</div>
