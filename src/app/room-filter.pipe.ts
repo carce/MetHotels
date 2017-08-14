@@ -12,7 +12,7 @@ export class RoomFilterPipe implements PipeTransform {
 
     let result = [];
     for (let item of value) {
-       if (item.name.toLowerCase().includes(args[0])) {
+       if ( item.name.includes(args[0]) || item.name.toLowerCase().includes(args[0])) {
          result.push(item);
        }
      }

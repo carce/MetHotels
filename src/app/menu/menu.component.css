@@ -1,5 +1,8 @@
 nav {
+    position: absolute;
+    width: 100%;
     background-color: #a70632;
+    z-index: 99;
 }
 
 .fixed {

@@ -1,11 +1,15 @@
-<div class="container">
+<section class="w960 main">
     <div class="search">
         <label for="room">Filter rooms:</label>
         <input type="text" #input (keyup)="0">
     </div>
     <h1>Rooms</h1>
-    <div *ngFor="let room of rooms | roomFilter:input.value">
-        <h4>{{room.id}}. {{room.name}}</h4>
-        <p>Fits: {{room.fits}}</p>
-    </div>
-</div>
+    <ul class="list-group" *ngFor="let room of rooms | roomFilter:input.value">
+        <li class="list-group-item">
+            <button class="btn btn-default right" (click)="delete(room.id)">Delete</button>
+            <h4>{{room.id}}. {{room.name}}</h4>
+            <p>Fits: {{room.fits}}</p>
+        </li>
+    </ul>
+    <button (click)="add()" class="btn btn-default button-main">Add Room</button>
+</section>

@@ -8,3 +8,33 @@ body {
 section.w960 {
     width: 960px;
 }
+
+.center {
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+.form {
+    margin: 20px;
+}
+
+.form label {
+    padding-bottom: 10px;
+}
+
+.form input {
+    width: 300px;
+}
+
+.form button {
+    margin: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.main {
+    margin: 10rem auto 5rem;
+}
